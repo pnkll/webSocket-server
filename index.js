@@ -39,10 +39,14 @@ const dispatchEvent = async (message, ws) => {
                      : json.value 
                         ? !data.find(elem=>elem.id === Number(json.value)) ? el[json.field] = json.value : el
                         //: json.field !== 'id' && delete el[json.field]
-                        : el[json.field] = json.field !== 'id' ? null : json.value
+                        : el[json.field] = json.field !== 'id' ? null : el.id
                   : el)
                const list = await sortData(json.sort, data)
                wss.clients.forEach(client => client.send(JSON.stringify({ method: json.method, event: json.event, users: client === ws ? list : data })))
+            case 'users':
+            const liste = json.list && data.map((el,index)=> Object.keys(el).map((elem,idx)=>el[elem] === json.list[index][idx]))
+            console.log(liste)
+               
          }
          break;
       default: ws.send((new Error('Error')).message);

@@ -21,7 +21,6 @@ async function sortData(order, data) {
 
 const dispatchEvent = async (message, ws) => {
    const json = JSON.parse(message);
-
    switch (json.method) {
       case "get":
          switch (json.event) {

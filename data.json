@@ -1,0 +1,38 @@
+[
+   {
+      "id": 1,
+      "firstName": "Майкл",
+      "lastName": "Антонов",
+      "country": "Russian",
+      "age": 10,
+      "language": "RU",
+      "color": "red"
+   },
+   {
+      "id": 2,
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "country": "USA",
+      "age": 22,
+      "language": "EN",
+      "color": "green"
+   },
+   {
+      "id": 3,
+      "firstName": "Jorge",
+      "lastName": "Nicolson",
+      "country": "Japan",
+      "age": 67,
+      "language": "JP",
+      "color": ""
+   },
+   {
+      "id": 4,
+      "firstName": "Marak",
+      "lastName": "Ibursoflodorw",
+      "country": "Uganda",
+      "age": 32,
+      "language": "UG",
+      "color": "black"
+   }
+]
